@@ -1,69 +1,375 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Battery Safety Thesis Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibrahim Sayyed | Battery Testing & Validation Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --card-light: #243449;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-soft: #0ea5e9;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    header {
+      padding: 55px 0 35px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 10px;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-top: 45px;
+      margin-bottom: 18px;
+      color: #7dd3fc;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #f8fafc;
+    }
+
+    p {
+      color: var(--text);
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #cbd5e1;
+      max-width: 850px;
+    }
+
+    .tagline {
+      color: var(--muted);
+      max-width: 850px;
+      margin-top: 12px;
+    }
+
+    .button-row {
+      margin-top: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      margin: 8px 10px 8px 0;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .card.highlight {
+      background: linear-gradient(135deg, #1e293b, #172554);
+    }
+
+    .label {
+      display: inline-block;
+      font-size: 13px;
+      color: #0f172a;
+      background: var(--accent);
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .skill {
+      background: var(--card-light);
+      border: 1px solid var(--border);
+      color: #dbeafe;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    .timeline-item {
+      border-left: 3px solid var(--accent-soft);
+      padding-left: 18px;
+      margin-bottom: 26px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding-top: 25px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial; margin: 40px;">
+<body>
+  <div class="container">
+    <header>
+      <h1>Ibrahim Sayyed</h1>
+      <p class="subtitle">
+        Battery Testing & Validation Engineer focused on lithium-ion battery safety,
+        thermal runaway characterization, calorimetry, test rig development, and experimental validation.
+      </p>
+      <p class="tagline">
+        This portfolio summarizes my hands-on work across battery abuse testing, thermal analysis,
+        instrumentation, energy-release quantification, and battery test facility development.
+      </p>
 
-<h1>Battery Safety & Thermal Runaway Analysis</h1>
+      <div class="button-row">
+        <a class="button" href="https://drive.google.com/drive/folders/1yH4csDOn1v409ZBa2GPc_Y9WyzK6ptde?usp=sharing">Download CV</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/ibrahim-yusuf-sayyed="_blank">LinkedIn</a>
+        <a class="button secondary" href="ibrahim.sayyed1609@gmail.com">Email</a>
+      </div>
+    </header>
 
-<h3>Master's Thesis</h3>
+    <section>
+      <h2>Portfolio Highlights</h2>
+      <div class="grid">
+        <div class="card highlight">
+          <span class="label">Battery Safety</span>
+          <h3>Thermal Runaway Testing</h3>
+          <p>
+            Conducted and supported safety-critical lithium-ion cell tests to evaluate thermal runaway behavior,
+            energy release, venting, ejecta, and failure mechanisms.
+          </p>
+        </div>
 
-<p>
-Development of a Benchtop Testing Methodology for Thermal Runaway Characterization of Li-ion Cells.</p>
+        <div class="card highlight">
+          <span class="label">Experimental Engineering</span>
+          <h3>Test Rig Development</h3>
+          <p>
+            Developed and improved test setups for battery abuse testing, including instrumentation,
+            temperature measurement, fixture preparation, and validation workflows.
+          </p>
+        </div>
 
-<h2>Key Responsibilities</h2>
+        <div class="card highlight">
+          <span class="label">Validation</span>
+          <h3>Calorimetry Comparison</h3>
+          <p>
+            Compared modified benchtop energy-release measurements against DATRC calorimetry to evaluate
+            accuracy, repeatability, and practical use as a pre-calorimetry screening method.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<ul>
-  <li>
-    Developed and implemented a modified benchtop thermal runaway 
-    test methodology for large-format lithium-ion cells with 
-    calorimetry-level accuracy.
-  </li>
+    <section>
+      <h2>Professional Experience</h2>
 
-  <li>
-    Designed and integrated custom instrumentation to measure 
-    internal cell core temperature during thermal runaway events.
-  </li>
+      <div class="card timeline-item">
+        <h3>Battery Test & Validation Engineer — Full-Time Employment</h3>
+        <p class="muted">Akkuracy Battery Testing GmbH | Garching/Munich, Germany</p>
+        <ul>
+          <li>Planned, executed, and evaluated battery safety and abuse tests on lithium-ion cells under safety-critical conditions.</li>
+          <li>Analysed test data related to thermal runaway, temperature evolution, gas release, ejecta behavior, and energy distribution.</li>
+          <li>Supported customer-oriented test campaigns by preparing technical documentation, test reports, and engineering summaries.</li>
+          <li>Worked with experimental setups, sensors, data acquisition systems, safety procedures, and post-test analysis workflows.</li>
+        </ul>
+      </div>
 
-  <li>
-    Performed quantitative analysis of energy release from 
-    cell can, ejecta, and vent gases during abuse testing 
-    of lithium-ion cells.
-  </li>
+      <div class="card timeline-item">
+        <h3>Battery Testing Working Student</h3>
+        <p class="muted">Akkuracy Battery Testing GmbH | Garching/Munich, Germany</p>
+        <ul>
+          <li>Supported the development and commissioning of battery testing infrastructure during the early growth phase of the company.</li>
+          <li>Assisted in preparing test facilities, test benches, fixtures, safety equipment, documentation, and operational workflows.</li>
+          <li>Contributed to hands-on battery testing activities, including setup preparation, instrumentation, data collection, and post-test inspection.</li>
+          <li>Helped establish structured testing procedures for lithium-ion cell safety evaluation and validation activities.</li>
+        </ul>
+      </div>
+    </section>
 
-  <li>
-    Conducted comparative validation of the developed methodology 
-    against DATRC calorimetry to evaluate energy capture accuracy 
-    and test reliability.
-  </li>
+    <section>
+      <h2>Master Thesis</h2>
+      <div class="card">
+        <span class="label">Battery Safety Research</span>
+        <h3>Development of a Benchtop Testing Methodology for Thermal Runaway Characterization of Li-Ion Cells</h3>
+        <p class="muted">Akkuracy Battery Testing GmbH / Friedrich-Alexander-Universität Erlangen-Nürnberg</p>
 
-  <li>
-    Established a rapid and cost-effective pre-calorimetry 
-    screening approach for battery safety characterization 
-    and thermal runaway evaluation.
-  </li>
-</ul>
+        <p>
+          The thesis focused on developing a simplified but accurate benchtop method to study energy release during
+          thermal runaway of large-format lithium-ion cells. The method was designed to provide faster and more
+          cost-effective screening before full calorimetric testing.
+        </p>
 
-<h2>Tools & Technologies</h2>
+        <ul>
+          <li>Developed and implemented a modified benchtop thermal runaway test methodology for large-format lithium-ion cells with calorimetry-level accuracy.</li>
+          <li>Designed and integrated custom instrumentation to measure internal cell core temperature during thermal runaway events.</li>
+          <li>Quantified energy release from cell can, ejecta, and vent gases during abuse testing of lithium-ion cells.</li>
+          <li>Validated the methodology against DATRC calorimetry to evaluate energy capture accuracy and test reliability.</li>
+          <li>Established a rapid pre-calorimetry screening approach for battery safety characterization and thermal runaway evaluation.</li>
+        </ul>
 
-<ul>
-<li>Battery Testing</li>
-<li>Calorimetry</li>
-<li>Thermal Analysis</li>
-<li>Python</li>
-<li>Excel</li>
-<li>Safety Validation</li>
-</ul>
+        <div class="button-row">
+          <a class="button" href="https://drive.google.com/drive/folders/1JDTmy85F4ZEid4_jGaOkJTLx8s6HFUWw?usp=sharing" target="_blank">View Thesis Presentation</a>
+        </div>
+      </div>
+    </section>
 
-<h2>Download Thesis</h2>
+    <section>
+      <h2>Technical Focus Areas</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Battery Testing</h3>
+          <div class="skills">
+            <span class="skill">Thermal Runaway</span>
+            <span class="skill">Abuse Testing</span>
+            <span class="skill">Cell Testing</span>
+            <span class="skill">Large-Format Cells</span>
+            <span class="skill">NMC Cells</span>
+            <span class="skill">Safety Validation</span>
+          </div>
+        </div>
 
-<p>
-<a href="https://drive.google.com/drive/folders/1JDTmy85F4ZEid4_jGaOkJTLx8s6HFUWw?usp=sharing">
-Download Full Thesis PDF
-</a>
-</p>
+        <div class="card">
+          <h3>Experimental Methods</h3>
+          <div class="skills">
+            <span class="skill">Calorimetry</span>
+            <span class="skill">DATRC Comparison</span>
+            <span class="skill">Instrumentation</span>
+            <span class="skill">Temperature Measurement</span>
+            <span class="skill">Test Rig Development</span>
+            <span class="skill">DAQ</span>
+          </div>
+        </div>
 
+        <div class="card">
+          <h3>Analysis & Documentation</h3>
+          <div class="skills">
+            <span class="skill">Data Analysis</span>
+            <span class="skill">Python</span>
+            <span class="skill">MATLAB</span>
+            <span class="skill">Excel</span>
+            <span class="skill">Technical Reporting</span>
+            <span class="skill">Failure Analysis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Project Themes</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Battery Test Facility Development</h3>
+          <p>
+            Supported the setup of battery testing infrastructure, including test areas, safety equipment,
+            documentation workflows, and preparation of experimental test environments.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Thermal Runaway Energy Quantification</h3>
+          <p>
+            Analysed energy release pathways during thermal runaway by separating contributions from cell can,
+            ejecta, and vent gases.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Core Temperature Measurement</h3>
+          <p>
+            Used custom instrumentation to compare internal cell temperature with external and vent-gas temperature
+            during thermal runaway events.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        © Ibrahim Sayyed — Battery Testing & Validation Portfolio
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
